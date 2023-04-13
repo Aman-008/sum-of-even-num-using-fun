@@ -21,3 +21,50 @@ int main()
     cout << "Even Sum is " << ans << endl;
     return 0;
 }
+
+
+
+
+
+
+
+
+
+How it works line by line-->
+
+
+#include <iostream>
+using namespace std;
+
+int getEvensum(int n)
+{
+    cout << "Inside getEvensum Function" << endl;
+
+    cout << "The value of n is : " << n << endl;
+
+    int sum = 0;
+    cout << "Initial value of sum is " << sum << endl;
+
+    for (int i = 2; i <= n; i += 2)
+    {
+        cout << "for the value of i is : " << i << endl;
+        sum = sum + i;
+        cout << "sum is now become : " << sum << endl;
+    }
+
+    cout << "Returning sum " << sum << endl;
+    return sum;
+    
+}
+int main()
+{
+    int n;
+    cout << "Enter the value of n : ";
+    cin >> n;
+
+
+    cout << "Calling Even sum function" << endl;
+    int ans = getEvensum(n);
+    cout << "Even Sum is " << ans << endl;
+    return 0;
+}
